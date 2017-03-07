@@ -78,9 +78,9 @@ Dentro de la DOCUMENTACIÓN de Sailsjs tenemos los siguientes conceptos:
     - Conexión por Modelo (en cada uno de los archivos de las tablas)
     Por ultimo tenemos varias tipos de configuraciones para cada una de nuestras tablas que serían las siguientes:
 
-identity
-globalId
-autoPK
-autoCreatedAt
-autoUpdatedAt
-tableName      
+      * identity
+      * globalId
+      * autoPK
+      * autoCreatedAt
+      * autoUpdatedAt
+      * tableName      
