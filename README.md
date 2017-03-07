@@ -49,17 +49,38 @@ Dentro de la carpeta de configuración de sailsjs tenemos un archivo llamado "ro
 
       + Método HTTP: El método HTTP también puede ser definido dentro de las rutas, por default el método es "get", también podemos elegir entre los métodos post put delete siendo put y get los más usados en las rutas.
 
+  * La acción del controlador o la vista
+  Después de definir la ruta y el método http con el cuál el agente se va a comunicar con el servidor, necesitamos definir la acción o la vista que vamos a usar.
 
-### Rutas
-Las rutas son a donde vamos a direccionar nuestro trafico dependiendo los métodos HTTP y el URL de nuestros recursos.
-Link Documentación Oficial: Routes
+  La vista puede ser cualquiera de las vistas dentro de nuestra carpeta "views"
 
+  Las acciones en cambió son los controladores dentro de nuestra aplicación, sean estos métodos dentro de los controladores del módelo o de un controlador aparte.
+
+
+### Modelos (routes.js)
+Los modelos son donde los datos dentro de una aplicación de sailsjs se guardan. Estos representan a Bases de Datos Relacionales como No Relacionales ya que sailsjs utiliza un ORM llamado WATERLINE el cuál puede conectarse a bases de datos como mysql postgresql oracle y tambien a bases de datos no relacionales como mongodb y redis.
 
 ### Controladores
 Los controladores dentro de Sailsjs tienen como finalidad brindar los métodos CRUD de nuestros modelos, así también como exponer la lógica de negocio que se defina en la aplicación, como por ejemplo la autenticación.
 
 
-### Pipeline
-En el archivo pipeline.js dentro de la carpeta task se encuentran las diferentes configuraciones de GRUNT que es un automatizador de actividades con JavaScript. Dentro de este podemos configurar los assets que van a ser inyectados en TODAS las vistas de nuestra aplicación en Sailsjs.
+### DOCUMENTACIÓN
+Dentro de la DOCUMENTACIÓN de Sailsjs tenemos los siguientes conceptos:
+  * ATTRIBUTES - Atributos.- Los atributos son información acerca de un modelo en sailsjs. Los atributos tienen un nombre y también validaciones
+  * ASSOCIATIONS - Relaciones.- Con el ORM se pueden establecer varios tipos de relaciones
+  * QUERY LANGUAGE - Lenguaje de Consulta.- El lenguaje de consulta en sailsjs es usado para utilizar operadores de las bases de datos como count por ejemplo desde nuestro ORM Waterline
+  * MODEL SETTINGS - Configuración de los modelos.- tenemos los siguientes
+    - Models.js ( Conexión General)
+      + La primera es la "connection" donde pondremos el nombre de las conexiones disponibles en el archivo "connections.js".
+      + El segundo es "schema" con valores de true o false lo que hace que nuestras tablas en la base de datos sean tratadas como bases de datos relacionales o bases de datos no relacionales (es decir poder agregar mas atributos que no esten definidos, o no)
+   - Connection.js ( Conexión General)
+          + En este archivo definimos todas las conexiones para nuestro orm, sean a postgresql, mysql, sqlserver, mongodb, redis, oracle y ¡otras más!. Para definir la cadena necesitamos datos como HOST o IP, Puerto, Nombre de Usuario, Nombre de la base, etc.
+    - Conexión por Modelo (en cada uno de los archivos de las tablas)
+    Por ultimo tenemos varias tipos de configuraciones para cada una de nuestras tablas que serían las siguientes:
 
-###<a name="#desarrollo">PRACTICA</a>
+identity
+globalId
+autoPK
+autoCreatedAt
+autoUpdatedAt
+tableName      
