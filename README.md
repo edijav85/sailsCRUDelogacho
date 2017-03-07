@@ -1,9 +1,9 @@
 # DEBER DE TECNOLOGÍAS WEB CON JAVASCRIPT
 -------------------------------------------
 ###Materia: Tecnologias Web con Java Script
-###Tema: Introduccion a la Web
+###Tema: Sailsjs CRUD Raza y Edicion Mascotas Tarea
 ###Fecha: 02/02/2016
-###Profesor:TANIA CALLE Y Adrian Eguez
+###Profesor:TANIA CALLE Y ADRIAN EGUEZ
 
 #INDICE DE CONTENIDOS
 -------------------------------------------
