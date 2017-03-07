@@ -28,6 +28,25 @@ Sailsjs CRUD Raza y Edicion Mascotas Tarea
 ### Views
 Las vistas son las páginas que se va a mostrar al usuario dependiendo de la lógica que tenga nuestra aplicación de sailsjs.
 
+El View Engine es el que permite usar archivos o  templates estáticos en la aplicación. En runtime, este template reemplaza las variables con los valores que son inyectados desde los controladores y transforma el template a un archivo html que se lo envía al cliente.
+
+Existen algunos Template Engines en el mercado como por ejemplo los siguientes:
+
+  - EJS
+  - PUG
+  - Mustache
+  - JADE    
+
+### EJS
+Sailsjs utiliza por default EJS el cual utiliza una síntaxis parecida a esto: <% %> . Dentro de estos tags podemos usar codigo javascript dentro de nuestra aplicación, para repetir código con un "for" por ejemplo. Tambíen EJS permite insertar el valor de las variables con el siguiente tag: <%= numeroEntero %> , en donde número entero es una variable JavaScript dentro de la vista.
+
+### Rutas (routes.js)
+Dentro de la carpeta de configuración de sailsjs tenemos un archivo llamado "routes.js" este archivo nos permite a nosotros delimitar 2 cosas básicamente.
+  + RUTA
+  ++ La ruta es el URL al cual el usuario va a ser dirigido cuando sailsjs recepte su petición (request), para esto necesitamos definir dos cosas:
+  --- Ruta en string: Una ruta es el URL a donde va a dirigir la petición el navegador o agente como por ejemplo: "/Usuario/CrearUsuario"
+  --- Método HTTP: El método HTTP también puede ser definido dentro de las rutas, por default el método es "get", también podemos elegir entre los métodos post put delete siendo put y get los más usados en las rutas.
+
 
 ### Rutas
 Las rutas son a donde vamos a direccionar nuestro trafico dependiendo los métodos HTTP y el URL de nuestros recursos.
