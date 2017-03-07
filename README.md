@@ -43,9 +43,11 @@ Sailsjs utiliza por default EJS el cual utiliza una síntaxis parecida a esto: <
 ### Rutas (routes.js)
 Dentro de la carpeta de configuración de sailsjs tenemos un archivo llamado "routes.js" este archivo nos permite a nosotros delimitar 2 cosas básicamente.
   + RUTA
-  ++ La ruta es el URL al cual el usuario va a ser dirigido cuando sailsjs recepte su petición (request), para esto necesitamos definir dos cosas:
-  --- Ruta en string: Una ruta es el URL a donde va a dirigir la petición el navegador o agente como por ejemplo: "/Usuario/CrearUsuario"
-  --- Método HTTP: El método HTTP también puede ser definido dentro de las rutas, por default el método es "get", también podemos elegir entre los métodos post put delete siendo put y get los más usados en las rutas.
+    ++ La ruta es el URL al cual el usuario va a ser dirigido cuando sailsjs recepte su petición (request), para esto necesitamos definir dos cosas:
+    
+          --- Ruta en string: Una ruta es el URL a donde va a dirigir la petición el navegador o agente como por ejemplo: "/Usuario/CrearUsuario"
+
+          --- Método HTTP: El método HTTP también puede ser definido dentro de las rutas, por default el método es "get", también podemos elegir entre los métodos post put delete siendo put y get los más usados en las rutas.
 
 
 ### Rutas
